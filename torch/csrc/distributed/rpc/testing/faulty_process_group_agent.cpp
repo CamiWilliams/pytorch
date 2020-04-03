@@ -47,7 +47,8 @@ std::vector<MessageType> FaultyProcessGroupAgent::parseMessagesToFailInput(
 
 std::shared_ptr<FutureMessage> FaultyProcessGroupAgent::send(
     const WorkerInfo& to,
-    Message&& message) {
+    Message&& message,
+    const std::chrono::milliseconds& rpcTimeout) {
   // We only fail control messages that have been specified by the test case.
   // For all other messages, we just send them without any failures.
   if (!shouldFailMessage(message.type())) {
