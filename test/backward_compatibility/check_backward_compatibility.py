@@ -25,6 +25,15 @@ white_list = [
     ('aten::real*', datetime.date(2020, 4, 15)),
     ('aten::imag*', datetime.date(2020, 4, 15)),
     ('aten::quantize_per_tensor', datetime.date(2020, 4, 15)),
+    ('quantized::linear_unpack_fp16', datetime.date(2020, 4, 20)),
+    ('quantized::linear_unpack', datetime.date(2020, 4, 20)),
+    ('quantized::linear_prepack_fp16', datetime.date(2020, 4, 20)),
+    ('quantized::linear_prepack', datetime.date(2020, 4, 20)),
+    ('quantized::linear_dynamic_fp16', datetime.date(2020, 4, 20)),
+    ('quantized::linear_relu_dynamic', datetime.date(2020, 4, 20)),
+    ('quantized::linear_dynamic', datetime.date(2020, 4, 20)),
+    ('quantized::linear_relu', datetime.date(2020, 4, 20)),
+    ('quantized::linear', datetime.date(2020, 4, 20)),
 ]
 
 
